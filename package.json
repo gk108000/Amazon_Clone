@@ -1,0 +1,22 @@
+{
+  "name": "amazon",
+  "version": "1.0.0",
+  "description": "amazon clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gk108000/Amazon_Clone.git"
+  },
+  "keywords": [
+    "amazzon"
+  ],
+  "author": "gaurav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gk108000/Amazon_Clone/issues"
+  },
+  "homepage": "https://github.com/gk108000/Amazon_Clone#readme"
+}
