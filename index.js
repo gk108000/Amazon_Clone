@@ -1,10 +1,13 @@
 const express = require('express');
 const morgan = require('morgan');
+const helmet = require('helmet');
 
 var app = express();
 
 //Logger
 app.use(morgan('dev'));
+//security
+app.use(helmet());
 
 
 
