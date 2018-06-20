@@ -41,3 +41,11 @@ UserSchema.pre('save',function(next){
         });
     });
 });
+
+//compare the database password and user provided password
+UserSchema.methods.comparePassord = function(password){
+    return bcrypt.compareSync(password,this.password);
+};
+
+
+module.exports = mongoose.model('User',UserSchema);

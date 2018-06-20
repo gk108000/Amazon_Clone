@@ -1,7 +1,16 @@
 const express = require('express');
 const morgan = require('morgan');
 const helmet = require('helmet');
+const mongoose = require('mongoose');
 
+var User = require('./models/user');
+
+mongoose.connect('mongodb://admin:gk108000@ds261660.mlab.com:61660/ecommarce_user',(err)=>{
+    if(err)
+        console.log(err);
+    else
+        console.log('connected to database');
+});
 var app = express();
 
 //Logger
